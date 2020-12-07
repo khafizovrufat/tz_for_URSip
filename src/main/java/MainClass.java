@@ -5,7 +5,7 @@ public class MainClass {
     public static void main(String[] args) {
     }
 
-    public static String generateNum(List<Integer> numbers) {
+    public String generateNum(List<Integer> numbers) {
         int temp = 1;
         for (Integer number : numbers) {
             if (temp < number) {
@@ -19,7 +19,7 @@ public class MainClass {
 
 
 
-    public static String convertResultInTrueFormat(int number) {
+    public String convertResultInTrueFormat(int number) {
         String rawString = String.valueOf(number);
         if (rawString.length() == 1) {
             rawString = "00" + rawString;
